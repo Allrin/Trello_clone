@@ -1,0 +1,59 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 calc(var(--gutter) * -1);
+
+    &_modal {
+        margin-top: 30px;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+@for $value from 1 through 12 {
+    .col-#{$value} {
+        margin: 0 var(--gutter);
+        width: calc(100% / 12 * #{$value} - var(--gutter) * 2);
+    }
+
+    @include breakpoint(xl) {
+        .col-xl-#{$value} {
+            margin: 0 var(--gutter);
+            width: calc(100% / 12 * #{$value} - var(--gutter) * 2);
+        }
+    }
+
+    @include breakpoint(lg) {
+        .col-lg-#{$value} {
+            margin: 0 var(--gutter);
+            width: calc(100% / 12 * #{$value} - var(--gutter) * 2);
+        }
+    }
+
+    @include breakpoint(md) {
+        .col-md-#{$value} {
+            margin: 0 var(--gutter);
+            width: calc(100% / 12 * #{$value} - var(--gutter) * 2);
+        }
+    }
+
+    @include breakpoint(sm) {
+        .col-sm-#{$value} {
+            margin: 0 var(--gutter);
+            width: calc(100% / 12 * #{$value} - var(--gutter) * 2);
+        }
+    }
+}
+
+// @for $value from 0 through 12 {
+//     .offset-#{$value} {
+//         margin-left: calc(100% / 12 * #{$value} + var(--gutter));
+//     }
+// }
+
+.container {
+    margin: 0 auto;
+    max-width: calc(((var(--mobile-padding) * 2) + var(--content-width)));
+    padding: 0 var(--mobile-padding);
+}

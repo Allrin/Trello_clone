@@ -1,0 +1,49 @@
+.button-outline {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: none;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:hover {
+        transform: scale(0.95);
+        border: 1px solid var(--white);
+    }
+
+    @include breakpoint(sm) {
+        width: 20px;
+        height: 20px;
+    }
+
+    &_edit {
+        background-image: url(../../../images/edit.svg);
+        top: 5%;
+        right: 25%;
+    }
+
+    &_delete {
+        background-image: url(../../../images/delete.svg);
+        top: 5%;
+        right: 5%;
+    }
+
+    &_back {
+        background-image: url(../../../images/back.svg);
+        top: 5%;
+        right: 25%;
+    }
+
+    &_work {
+        background-image: url(../../../images/work.svg);
+        right: 5%;
+        top: 45%;
+    }
+
+    &_complete {
+        background-image: url(../../../images/check.svg);
+        top: 5%;
+        right: 5%;
+    }
+}

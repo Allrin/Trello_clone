@@ -1,0 +1,11 @@
+.form-select {
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+    width: 45%;
+    border-radius: 10px;
+
+    @include breakpoint(sm) {
+        font-size: 14px;
+    }
+}

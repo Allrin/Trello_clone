@@ -1,0 +1,46 @@
+.trello {
+    padding: 50px 0px;
+
+    &__title {
+        padding: 50px 70px;
+        border: 3px solid var(--white);
+        border-radius: 10px;
+        background-color: var(--purple);
+        justify-content: space-between;
+
+        @include breakpoint(sm) {
+            padding: 25px;
+        }
+
+        &-text {
+            font-size: 40px;
+            color: var(--white);
+
+            @include breakpoint(sm) {
+                font-size: 30px;
+            }
+        }
+
+        &-time {
+            padding: 10px 15px;
+            border: 1px;
+            border-radius: 5px;
+            font-size: 24px;
+            color: var(--purple);
+            background-color: var(--white);
+
+            @include breakpoint(sm) {
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__todos {
+        padding: 25px 20px;
+
+        @include breakpoint(sm) {
+            padding-top: 85px;
+            position: relative;
+        }
+    }
+}

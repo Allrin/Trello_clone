@@ -1,0 +1,46 @@
+.head {
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: var(--beige);
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint(md) {
+        padding: 10px;
+    }
+
+
+    &_progress {
+        background-color: var(--virulent);
+
+        @include breakpoint(sm) {
+            margin-top: 25px;
+        }
+    }
+
+    &_done {
+        background-color: var(--grey);
+
+        @include breakpoint(sm) {
+            margin-top: 15px;
+        }
+    }
+
+    &__title {
+        color: var(--white);
+        font-size: 30px;
+
+        @include breakpoint(md) {
+            font-size: 18px;
+        }
+    }
+
+    &__col {
+        color: var(--white);
+        font-size: 28px;
+
+        @include breakpoint(md) {
+            font-size: 18px;
+        }
+    }
+}

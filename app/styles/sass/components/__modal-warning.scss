@@ -1,0 +1,20 @@
+.modal-warning {
+    display: none;
+    position: fixed;
+    max-width: 300px;
+    padding: 25px 20px;
+    z-index: 99;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid var(--pink);
+    border-radius: 20px;
+    background-color: var(--purple);
+    text-align: center;
+
+    &__text{
+        color: var(--white);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

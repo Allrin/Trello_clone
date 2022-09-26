@@ -1,0 +1,42 @@
+:root {
+    --content-width: 1170px;
+    --mobile-padding: 16px;
+    --gutter: 15px;
+    --purple: #532053;
+    --black: #2d3033;
+    --white: rgb(255, 255, 255);
+    --pink: #a84570;
+    --beige: #b997dc;
+    --grey: #82837a;
+    --virulent: #8a7598;
+    --blue: #4b057a;
+    --red: #f00707;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--black);
+    background-color: var(--pink);
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+    margin: 0;
+}
